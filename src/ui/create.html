@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    <main class="container-fluid">
+        <div class="row">
+            <div class ="col-md-6 p-4 my-auto">
+                <!---formulario-->
+                <form id="productForm" class="card card-body">
+                    <div class="form-group">
+                        <label for="productName" class="form-label mt-2">Product Name</label>
+                        <input type="text" id="name" placeholder="Product's Name" class="form-control" autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label for="price" class="form-label mt-2">Product Price</label>
+                        <input type="number" id="price" placeholder="Product Price" step="any" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="descriptionP" class="form-label mt-2">Product Description</label>
+                        <textarea id="description" rows="3" placeholder="Product Description" class="form-control"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-2">Save</button>
+                </form>
+
+            </div>
+        </div>
+    </main>
+    <script src="./create.js"></script>
+</body>
+</html>
